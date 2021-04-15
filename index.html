@@ -9,13 +9,13 @@
 <body>
     <div class="calculator">
         <div>
-            <input type="number" value="0">
+            <input type="text" value="0" disabled>
         </div>
         <div class="buttons">
-            <button class="operation" onclick="clearText(event)">C</button>
-            <button class="operation" onclick="clearAll(event)">AC</button>
-            <button class="operation" onclick="negate(event)">+/-</button>
-            <button class="operation" onclick="percent(event)">%</button>
+            <button class="operation" onclick="clearLastNumber()">CE</button>
+            <button class="operation" onclick="clearAll()">C</button>
+            <button class="operation" onclick="negate()">+/-</button>
+            <button class="operation" onclick="percent()">%</button>
             <button class="operation" onclick="devide(event)">/</button>
             <button class="numbers" onclick="AddNumber(7)">7</button>
             <button class="numbers" onclick="AddNumber(8)">8</button>
