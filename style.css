@@ -80,24 +80,24 @@ input:focus {
   border: none;
   font-size: 26px;
   font-weight: bold;
-  box-shadow: -4px -4px 4px #e5caff, 6px 6px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: rgb(0 0 0 / 40%) 2px 2px 5px;
 }
 
 .operation {
   color: #9400d3;
 }
 
-.operation,
+.operation:focus,
 .numbers:focus {
   outline: none;
 }
 
-.operation,
+.operation:hover,
 .numbers:hover {
   background-color: rgb(226, 181, 220);
 }
 
-.operation,
+.operation:active,
 .numbers:active {
   box-shadow: inset -6px -6px 9px rgb(248, 186, 243),
     inset 6px 6px 9px rgba(229, 53, 248, 0.4);
