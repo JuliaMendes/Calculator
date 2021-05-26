@@ -7,7 +7,6 @@ let choice;
 function AddNumber(number){
     arrayNumbers.push(number)
     input.value = arrayNumbers.join('');
-    console.log(arrayNumbers)
 }
 
 function add(){
@@ -31,7 +30,7 @@ function multiply(){
     choice = '*'
 }
 
-function devide(){
+function divide(){
     firstNumberOfExpression = parseFloat(arrayNumbers.join(''));
     input.value = ''
     arrayNumbers = []
@@ -39,9 +38,8 @@ function devide(){
 }
 
 function result(){
-    switch(choice) {
+    switch(choice){
         case '+':
-            [8] + [6,7,9]
             input.value = firstNumberOfExpression + parseFloat(arrayNumbers.join(''));
              break;
         case '-':
@@ -54,17 +52,17 @@ function result(){
             input.value = firstNumberOfExpression / parseFloat(arrayNumbers.join(''));
             break;
       } 
+
 }
 
 function percent(){
-    var percentage =  arrayNumbers.join('') / 100
+    var percentage = arrayNumbers.join('') / 100
     input.value = percentage
 }
 
 function negate(){
     var negate = arrayNumbers.join('') * -1
     console.log(arrayNumbers)
-    //var negate = Math.abs(arrayNumbers.join(''))
     input.value = negate
 }
 
